@@ -1,0 +1,21 @@
+{
+  "name": "api-s3-upload",
+  "version": "1.0.0",
+  "description": "It's a simple nodejs project that uploads a file to s3 AWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-watch": "nodemon index.js",
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.315.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-validator": "^5.3.0",
+    "request": "^2.88.0"
+  }
+}
