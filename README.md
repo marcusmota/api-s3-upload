@@ -16,8 +16,9 @@ Your should get the API credentials to upload/get a file from the s3 on security
 
 <br/>
 <br/>
-React's frontend example repository
+React's frontend example repository<br/>
 
 <a href="https://github.com/marcusmota/react-s3-upload">repository</a>
-
+<br/>
+<br/>
 <b>License MIT</b>
