@@ -3,7 +3,7 @@ const awsBucketUrl = 'https://s3-sa-east-1.amazonaws.com/mybucket.test.com'; //i
 const awsBucketName = 'insert-the-bucket-name'; //mybucket.test.com
 const acessKeyId = 'key-id';
 const secretAccessKey = 'secret-key-id';
-const expireTime = 60;
+const expireTime = 60; //expires in 60 seconds, for more information of params read the docs on AWS s3
 
 const getFileByName = (req, res) => {
 
@@ -21,9 +21,7 @@ const getFileByName = (req, res) => {
         if(err){
             return res.send(err);
         }
-        request(data, function (err, response, body) {
-            res.send(body);
-        })
+        res.send(data);
     })
 };
 
@@ -44,7 +42,7 @@ const getSignedUrl = (req, res) => {
             Bucket: awsBucketName, 
             Key: fileName,
             ContentType : fileType, 
-            Expires : expireTime, //expires in 60 seconds, for more information of params read the docs on AWS s3
+            Expires : expireTime, 
             ACL : 'private'
         };
 
